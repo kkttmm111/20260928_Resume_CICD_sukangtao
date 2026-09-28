@@ -14,18 +14,18 @@
   font-display: swap;
 }
 :root {
-  /* 配色层级：墨绿主标题、古铜次标题、深灰正文、香槟色细线。 */
-  --text: #343c38;
-  --muted: #6d746d;
-  --accent: #42635b;
-  --heading: #254a40;
-  --subheading: #7c6348;
-  --gold: #b8a27d;
-  --heading-wash: #edf1ea;
-  --body-size: 19px;
-  --title-size: 32px;
-  --line: #e1ddd3;
-  --background: #fbfaf6;
+  /* 配色层级：大学官网风格，深蓝主标题，简洁白底。 */
+  --text: #333333;
+  --muted: #666666;
+  --accent: #0055a5;
+  --heading: #003366;
+  --subheading: #003366;
+  --gold: #0055a5;
+  --heading-wash: #f0f5fa;
+  --body-size: 18px;
+  --title-size: 28px;
+  --line: #e5e5e5;
+  --background: #ffffff;
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 94px; scroll-behavior: smooth; }
@@ -48,7 +48,7 @@ h3 { font-size: 22px; font-weight: 600; color: var(--subheading); }
 .skip-link:focus { top: 12px; }
 
 /* 2. 顶部只保留姓名和普通锚点导航。 */
-.site-header { position: sticky; top: 0; z-index: 10; background: #fbfaf6f5; backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.site-header { position: sticky; top: 0; z-index: 10; background: #ffffff; backdrop-filter: blur(12px); border-bottom: 2px solid #003366; }
 .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 30px; min-height: 70px; }
 .brand { font-size: 24px; font-weight: 600; color: var(--text); white-space: nowrap; }
 .brand span { font-size: 14px; font-weight: 400; letter-spacing: 1px; margin-left: 12px; color: var(--muted); }
@@ -66,7 +66,7 @@ h1 span { font-size: 32px; font-weight: 400; letter-spacing: 0; color: var(--sub
 .hero-role { margin-bottom: 12px; font-size: 20px; }
 .hero-school { color: var(--muted); font-size: 18px; }
 .hero-visual { flex-shrink: 0; }
-.hero-visual figure { padding: 9px; border: 1px solid #d8ceb9; background: #fffefa; box-shadow: 0 12px 32px #3444390b; }
+.hero-visual figure { padding: 0; border: 1px solid #e5e5e5; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 .hero-visual img { display: block; width: 220px; height: 220px; object-fit: cover; }
 .research-direction { margin-top: 30px; }
 .research-direction > span { font-size: 20px; font-weight: 600; color: var(--subheading); }
@@ -98,7 +98,7 @@ h1 span { font-size: 32px; font-weight: 400; letter-spacing: 0; color: var(--sub
 .skills-list strong { display: block; margin-bottom: 8px; font-weight: 600; color: var(--subheading); }
 .skills-list li { padding-top: 15px; border-top: 1px solid #c8baa2; }
 /* 作品图像是实际网站截图。Grid 管布局，CSS 过渡负责轻微悬停效果。 */
-#portfolio { background: #f4f2eb; }
+#portfolio { background: #fafafa; }
 .portfolio-list { padding: 0; margin: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
 .work-card { min-width: 0; }
 .work-card > a { display: block; height: 100%; border: 1px solid #ddd8cb; border-radius: 6px; overflow: hidden; background: #fffdf8; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
